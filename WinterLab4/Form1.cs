@@ -78,7 +78,7 @@ namespace WinterLab4
                     }
 
                     // Determine the location the user is traveling to.
-                    String bookedLocation = "UNKNOWN";
+                    string bookedLocation = "UNKNOWN";
                     if (radMexico.Checked)
                     {
                         bookedLocation = "MEXICO";
@@ -140,7 +140,7 @@ namespace WinterLab4
             SetFlight();
         }
 
-       // private void btnConfirm_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
             // When the user confirms their trip, tell them it was booked, they've got an email and how much they paid.
             DisplayMsg("Trip booked and paid\nPrice: " + lblPrice.Text, "Confirmation Email Sent");
@@ -175,7 +175,7 @@ namespace WinterLab4
             {
                 chkFlightIncluded.Checked = false;
             }
-           // else
+            else
             {
                 chkFlightIncluded.Checked = true;
             }
